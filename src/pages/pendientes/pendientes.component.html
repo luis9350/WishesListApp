@@ -10,7 +10,7 @@
       {{lista.nombre}}
     </li>
   </ul-->
-  <ion-card *ngFor="let lista of _listaDeseos.listas; let idx=index">
+  <ion-card *ngFor="let lista of _listaDeseos.listas | pendientes; let idx=index">
 
     <ion-item color="primary" (click)="verDetalle(lista,idx)">
       <h2 >{{lista.nombre}}</h2>
